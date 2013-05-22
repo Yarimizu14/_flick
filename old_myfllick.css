@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#article-container {
+	width: 640px;
+	height: 960px;
+	border: solid 1px red;
+
+	display: box; display: -webkit-box; display: -moz-box; 
+	-webkit-box-orient:	vertical;
+}
+
+article#result {
+	-webkit-box-flex: 5;
+	-mox-box-flex: 5;
+
+	width: 640px;
+	height: 900px;
+
+	background-color: #696969;
+	overflow: hidden;
+}
+
+article#history {
+	background-color: green;
+	-webkit-box-flex: 1;
+	-mox-box-flex: 1;
+
+	position: absolute;
+	bottom: 30px;
+	width: 640px;
+	height: 960px;
+
+	/*max-height: 60px;*/
+	overflow: hidden;
+}
+
+article#result li {
+	font-size: 3em;
+}
+
+article#history li {
+	font-size: 3em;
+}
+
+.moving {
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 300ms;
+}
+
+#space {
+	height: 100px;
+}
